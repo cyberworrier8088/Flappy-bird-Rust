@@ -1,0 +1,25 @@
+[package]
+name = "Flappy-bird-Rust"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bevy = "0.18.1"
+rand = "0.9"
+
+# Dev profile tweaks so Bevy doesn't lag during testing
+[profile.dev]
+opt-level = 1 # Quick compilation
+
+
+# This keeps your own compilation fast but makes the engine code run at full speed
+[profile.dev.package."*"]
+opt-level = 3
+
+# Max performance release configuration
+[profile.release]
+opt-level = 3           # Max aggressive optimizations fr
+lto = "fat"             # Link-Time Optimization across all crates (heavy binary analysis)
+codegen-units = 1       # Restricts parallel codegen blocks to allow deeper compiler passes
+panic = "abort"         # Removes stack unwinding overhead. If it crashes, it drops dead instantly (saves space & speed)
+strip = true            # Strips symbols and debug info, makes the binary tiny
