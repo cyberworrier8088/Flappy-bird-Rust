@@ -35,10 +35,10 @@ or demo github releases page:
 
 
 ### demo video
-![Flappy Bird Demo](assets\Demo.gif)
+![Flappy Bird Demo](assets\demo.gif)
 
 ### demo image
-![Flappy Bird Demo](assets\Demoimg.png)
+![Flappy Bird Demo](assets\demoimg.png)
 
 
 
