@@ -2,6 +2,8 @@
 A flappy bird game in rust, using bevy game engine. highly optimized for performance, and smooth gameplay
 
 ## Features
+- GPU-accelerated rendering with bevy support (WebGPU, Vulkan, DirectX, Metal, OpenGL)
+- gpu (nvidia, amd, intel, apple silicon)
 - Smooth gameplay
 - Optimized for performance
 - Using bevy game engine
@@ -28,4 +30,19 @@ To install and run the game, follow these steps:
    ```
 
 or demo github releases page:
-[https://github.com/MuhammadNabhan/flappy-bird-rust/releases](https://github.com/MuhammadNabhan/flappy-bird-rust/releases)
+[https://github.com/cyberworrier8088/Flappy-bird-Rust/releases/download/demo](https://github.com/cyberworrier8088/Flappy-bird-Rust/releases/download/demo)
+
+
+
+### demo video
+![Flappy Bird Demo](assets\Demo.gif)
+
+### demo image
+![Flappy Bird Demo](assets\Demoimg.png)
+
+
+
+## Credits
+- [Bevy Game Engine](https://bevyengine.org/)
+- [Rust](https://www.rust-lang.org/)
+- [Flappy Bird](https://en.wikipedia.org/wiki/Flappy_Bird)
